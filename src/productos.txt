@@ -1,0 +1,22 @@
+[
+  {
+    "nombre": "Violeta - Isabel Allende",
+    "descripcion": "Libro - Ficción",
+    "timestamp": 1668647566189,
+    "codigo": "1234567890",
+    "precio": 4500,
+    "stock": 10,
+    "foto": "https://contentv2.tap-commerce.com/cover/large/9789500766647_1.jpg?id_com=1113",
+    "id": 1
+  },
+  {
+    "nombre": "Personas decentes - Leonardo Padura",
+    "descripcion": "Libro - Ficción",
+    "timestamp": 1668647566189,
+    "codigo": "1234567890",
+    "precio": 4200,
+    "stock": 10,
+    "foto": "https://contentv2.tap-commerce.com/cover/large/9789876707213_1.jpg?id_com=1113",
+    "id": 2
+  }
+]
