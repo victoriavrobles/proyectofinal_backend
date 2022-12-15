@@ -1,8 +1,9 @@
 import express from 'express';
 const routeProducts = express.Router();
-import { Contenedor } from '../contenedor.js';
+// import { Contenedor } from '../contenedor/contenedor.js';
+import ContenedorProductos from '../daos/productos/productosmongodb.js';
 
-const productos = new Contenedor('./src/productos.txt');
+const productos = new ContenedorProductos();
 
 const middleware = (req, res, next) => {
   const admin = req.headers.admin;

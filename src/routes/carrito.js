@@ -1,8 +1,11 @@
 import express from 'express';
 const routeCart = express.Router();
-import { Contenedor } from '../contenedor.js';
-const carrito = new Contenedor('./src/carrito.txt');
-const productos = new Contenedor('src/db/productos.txt');
+// import { Contenedor } from '../contenedor/contenedor.js';
+import ContenedorCarrito from '../daos/carritos/carritosmongodb.js';
+import ContenedorProductos from '../daos/productos/productosmongodb.js';
+
+const carrito = new ContenedorCarrito('./src/carrito.txt');
+const productos = new ContenedorProductos('src/db/productos.txt');
 
 routeCart.get('/', async (req, res) => {
   const listaCarrito = await carrito.getAll();
